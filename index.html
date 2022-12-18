@@ -262,12 +262,42 @@
             position: relative;
             top: 360px;
         }
+        
 
+        @keyframes example {
+            0%   {background-color: rgb(255, 71, 71);
+                font-size: 6rem;
+                border-radius:0%;
+                }
+            90%  {background-color: rgb(243, 71, 255);
+                font-size: 6rem;
+            letter-spacing: 5rem;
+            border-radius:0%;
+            }
+            100%{
+                background-color:rgb(255, 71, 71);
+                letter-spacing: normal;
+                font-size: 1px;
+                border-radius: 3rem;
+            }
+        }
+        #rheading{
+            text-align: center;
+            font-family:cursive;
+            font-size: 6rem;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
         
     </style>
 </head>
 <body>
     <main>
+        <div id="rheading">
+            Fossil
+        </div>
         <div>
             <img class="navtop" src="Screenshot 2022-12-11 173030.jpg">
         </div>
